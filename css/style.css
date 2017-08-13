@@ -290,25 +290,17 @@ cursor: pointer;
 }
 @-webkit-keyframes pulse{
 	0%{-webkit-filter:brightness(1);
-	filter:brightness(1);
-		-webkit-filter:saturate(1);
-		        filter:saturate(1);}
+	filter:brightness(1);}
 	100%{
 		-webkit-filter:brightness(3);
-		        filter:brightness(3);
-		-webkit-filter:saturate(2);
-		        filter:saturate(2);}
+		        filter:brightness(3);}
 }
 @keyframes pulse{
 	0%{-webkit-filter:brightness(1);
-	filter:brightness(1);
-		-webkit-filter:saturate(1);
-		        filter:saturate(1);}
+	filter:brightness(1);}
 	100%{
 		-webkit-filter:brightness(3);
-		        filter:brightness(3);
-		-webkit-filter:saturate(2);
-		        filter:saturate(2);}
+		        filter:brightness(3);}
 }
 .bigFlower{/*увеличение цветка при клике на нем*/
 -webkit-animation: growth 2s forwards;

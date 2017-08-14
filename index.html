@@ -55,17 +55,12 @@
 	</audio>
 <!--меню с кнопками социальных сетей, управления звуком и  основной информацией-->
 		<div class="navigation">
-			<nav>
-				<ul>
-					<li><a href="http://www.vk.com/id6404266" class="seti"><img src="image/buttons/vk.png" alt="Кнопка входа вк" title="ВКонтакте"></a></li>
-					<li><a href="http://www.ok.ru/profile/122152887380" class="seti"><img src="image/buttons/ok.png" alt="Кнопка входа ок" title="Одноклассники"></a></li>
-					<li><a href="https://www.pinterest.com/irina_shche/" class="seti"><img src="image/buttons/p.png" alt="Кнопка входа пин" title="Pinterest"></a></li>
-					<li><a href="#popup3" class="seti"><img src="image/buttons/info.png" alt="Информация" title="Информация" onclick="PopUpShow3();"></a></li>
-					<li><button class="seti"><img src="image/buttons/play.png" alt="play" title="" ></button></li>
-					<li><button class="seti" onclick="changeVolume(0.1, 'up')"><img src="image/buttons/plus.png" alt="play" title="Увеличить громкость" ></button></li>
-					<li><button class="seti" onclick="changeVolume(0.1, 'down')"><img src="image/buttons/minus.png" alt="pause" title="Уменьшить громкость" ></button></li>
-				</ul>
-			</nav>
+			<a href="#popup3" class="navi" onclick="PopUpShow3();"><img src="image/buttons/info.png" alt="info" title="" ></a>
+			<div>
+				<button class="navi" onclick="changeVolume(0.1, 'up')"><img src="image/buttons/plus.png" alt="play" title="Увеличить громкость" ></button>
+				<button class="navi"><img src="image/buttons/play.png" alt="play" title="" ></button>
+				<button class="navi" onclick="changeVolume(0.1, 'down')"><img src="image/buttons/minus.png" alt="pause" title="Уменьшить громкость" ></button>
+			</div>
 		</div>
 		
 
@@ -101,7 +96,7 @@
 <div class="flipbook-viewport">
 	<div class="container">
 		<div class="flipbook">
-			<div class="hard" id="logotip" style="background-image:url(image/pages/cover2.jpg)"><img id="logotip2" src="image/gif_swf/logoGif.gif" alt="logotip"></div>
+			<div class="hard" id="logotip" style="background-image:url(image/pages/cover2.jpg)"><img id="logotip2" src="image/gif_swf/logoGif.gif" alt="logotip"><div class="nadpisi">Потяните за край страницы - тайны и откроются!</div></div>
 			<div class="hard" style="background-image:url(image/pages/back.jpg)"></div>
 			<div style="background-image:url(image/pages/paper2.jpg)"><div class="nadpisi">Добро пожаловать <br>в Мир Творчества!</div></div>
 			
@@ -228,7 +223,8 @@
 </div>
 
 <footer>
-<p>©mki.by 2017|Копирование материалов сайта без указания обратной ссылки запрещено. Music by <a href="https://soundcloud.com/alexander_shcherbin">Alex_SHCH</a></p>
+	<p>© 2017-2018 mki.by |Копирование материалов сайта без указания обратной ссылки запрещено| Music by <a href="https://soundcloud.com/alexander_shcherbin">Alex_SHCH </a> |
+	<a href="http://www.vk.com/id6404266" class="seti">&#230;</a><a href="https://www.pinterest.com/irina_shche/" class="seti">&#237;</a><a href="http://www.ok.ru/profile/122152887380" class="seti">&#233;</a></p>
 </footer>
 
 <iframe name="myIFR" style="display: none"></iframe><!--для того, чтобы при отправке email, страница не обновлялась -->

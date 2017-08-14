@@ -1,6 +1,6 @@
 var playing = false;
 var music = document.getElementById("player");
-var playPauseButton = document.getElementsByClassName("seti")[4];
+var playPauseButton = document.getElementsByClassName("navi")[2];
 
 window.onload = function(){
 //в зависимости от состояния проигрывания происходит остановка или игра музыки

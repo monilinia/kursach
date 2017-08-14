@@ -40,25 +40,37 @@ button:hover{
 	cursor:pointer;
 }
 /*меню*/
-nav {
-	text-align: center;
-	margin: 20px;
+.navigation {
+	margin: 20px auto;
+	width: 920px;
+	
 }
-nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-li {-webkit-filter: drop-shadow(0 0 20px #300);
-	filter: drop-shadow(0 0 20px #300);
+.navigation div{
+	width: 300px;
+	text-align: right;
 	display: inline-block;
-	width: 70px;
+	background-image: url(../image/buttons/fon_music.png);
+		background-position: center center;
+	background-repeat: no-repeat;
+	background-size:  auto 100%;
 }
-li:nth-child(4) {
-	margin: 0 35px;
+button{
+	display: inline-block;
 }
-
-li:hover {
+.navi img{
+	-ms-filter: drop-shadow(0 0 5px #300);
+	-webkit-filter: drop-shadow(0 0 5px #300);
+	        filter: drop-shadow(0 0 5px #300);
+	height: 50px;
+	margin: 0 35px 0 10px;
+}
+a.navi{
+	float: left;
+	display:inline-block;
+	color:#daa520;
+	margin-right: 190px;
+}
+.navi:hover {
 	-webkit-animation: rotateBut 1s linear infinite;
 	        animation: rotateBut 1s linear infinite;
 }
@@ -115,13 +127,6 @@ li:hover {
 	}
 }
 
-.seti img{
-	-ms-filter: hue-rotate(350deg) drop-shadow(0 0 5px #300);
-	-webkit-filter: hue-rotate(350deg) drop-shadow(0 0 5px #300);
-	        filter: hue-rotate(350deg) drop-shadow(0 0 5px #300);
-	width:100%;
-}
-
 /* картинки для страниц книги */
 .flipbook img {	
 	position:absolute;
@@ -158,7 +163,11 @@ li:hover {
 	color: #300;
 	font-weight: bold;
 }
-
+#logotip div{
+	color: #daa520;
+	text-shadow: 0 0 1px #300;
+	margin-top: 50px;
+}
 /* попап*/
 .popup {
 	width: 100%;
@@ -247,26 +256,27 @@ li:hover {
 /*------------------------------------------*/
 /*кнопка закрытия попап*/
 .xxx {
-	font-family:'websymbolsligaregular';
 	display: block;
-	font-size: 30px;
 	position: absolute;
 	top: 20px;
-	right: 20px;
+	right: 15%;
 	z-index: 999;
 }
 .xxx:hover {
-cursor: pointer;
--webkit-animation: rotateBut 1s linear infinite;
-        animation: rotateBut 1s linear infinite;
-}
-.icon:hover {
-	text-shadow: 2px 1px 2px #DAA520;
+	cursor: pointer;
+	filter: drop-shadow(0 0 10px #DAA520);
 }
 .icon {
+	font-size: 40px;
+	font-family:'websymbolsligaregular';
+	-webkit-animation: rotateBut 1s linear infinite;
+    animation: rotateBut 2s linear infinite;
 	color: #DAA520;
 }
-
+.icon:hover{
+	color: #300;
+	text-shadow: 0 0 2px #DAA520;
+}
 /* свойства для блока с параллакс */
 #port {
 	background: rgb(47, 49, 52);
@@ -966,7 +976,6 @@ footer{
 	position: absolute;
 	width: 80vw;
 	margin: 0 10vw;
-	font-family:"Rubius","Monotype Corsiva";
 	font-size:14px;
 	text-align: center;
 	color: #daa520;
@@ -978,9 +987,16 @@ footer{
 footer a{
 	color: #daa520;
 	text-decoration: underline;
+	
 }
 
 footer a:hover{
 -webkit-animation: rotateBut 2s linear infinite;
 	        animation: rotateBut 2s linear infinite;
+}
+.seti{
+	opacity: 0.8;
+	margin-left: 15px;
+	font-family:'websymbolsligaregular';
+	text-decoration: none;
 }

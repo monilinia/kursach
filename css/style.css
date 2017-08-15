@@ -7,18 +7,17 @@
 	font-style: normal;
 }
 @font-face {
-font-family: 'Olietta_script_BoldItalic';
-src: url('fonts/Olietta_script_BoldItalic.ttf');
+	font-family: 'Olietta_script_BoldItalic';
+	src: url('fonts/Olietta_script_BoldItalic.ttf');
 }
 @font-face {
-font-family: 'Olietta_script_Lyrica_BoldItalic';
-src: url('fonts/Olietta_script_Lyrica_BoldItalic.ttf');
+	font-family: 'Olietta_script_Lyrica_BoldItalic';
+	src: url('fonts/Olietta_script_Lyrica_BoldItalic.ttf');
 }
 @font-face {
-font-family: 'Rubius';
-src: url('fonts/Rubius.ttf');
+	font-family: 'Rubius';
+	src: url('fonts/Rubius.ttf');
 }
-
 body{margin:0;
 	padding:0;
 	-webkit-user-select: none;/*отменяем выделение при двойных кликах*/
@@ -43,7 +42,6 @@ button:hover{
 .navigation {
 	margin: 20px auto;
 	width: 920px;
-	
 }
 .navigation div{
 	width: 300px;
@@ -126,7 +124,6 @@ a.navi{
 	        transform:translateY(-1px);
 	}
 }
-
 /* картинки для страниц книги */
 .flipbook img {	
 	position:absolute;
@@ -163,10 +160,27 @@ a.navi{
 	color: #300;
 	font-weight: bold;
 }
-#logotip div{
+.fon .nadpisi{
+	position: absolute;
+	top: -90px;
+	z-index: 100;
 	color: #daa520;
-	text-shadow: 0 0 1px #300;
-	margin-top: 50px;
+	text-shadow: 0 0 2px #eedd82;
+	width: 100%;
+	text-align: center;
+	background-color: rgba(51,0,0,0.7);
+	opacity:0;
+	pointer-events: none;
+}
+#rules{
+	animation: rules 5s;
+}
+
+@keyframes rules{
+	0%{}
+	55%{opacity:1;}
+	80%{opacity:1;}
+	100%{opacity:0;}	
 }
 /* попап*/
 .popup {

@@ -17,6 +17,9 @@ jQuery(document).ready(function($) {
 		$("#logotip2").fadeIn('slow', function() {});
 		$("#logotip2").css({"opacity":1});
 	}, 12000);
-	 
+	
+	setTimeout(function() {/*появление инструкции*/
+		$(".fon .nadpisi").attr("id","rules");
+	}, 14000);
 });
 

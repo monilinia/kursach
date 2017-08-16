@@ -1,4 +1,4 @@
-var playing = false;
+var playing = false;//музыка при загрузке не играет
 var music = document.getElementById("player");
 var playPauseButton = document.getElementsByClassName("navi")[2];
 

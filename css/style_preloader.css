@@ -53,7 +53,7 @@
 	left: 85px;
 	height:115px;
 	width: 230px;
-	 background: black;
+	background: black;
 }
 .squire.first{/*поворачивающийся элемент, открывает полукруг*/
 	z-index: 4;

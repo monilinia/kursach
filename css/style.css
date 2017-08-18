@@ -173,7 +173,15 @@ a.navi{
 	pointer-events: none;
 }
 #rules{
-	animation: rules 5s;
+	-webkit-animation: rules 5s;
+	        animation: rules 5s;
+}
+
+@-webkit-keyframes rules{
+	0%{}
+	55%{opacity:1;}
+	80%{opacity:1;}
+	100%{opacity:0;}	
 }
 
 @keyframes rules{
@@ -192,8 +200,7 @@ a.navi{
 	top: 0;
 	left: 0;
 	background: #300;
-	background: -ms-linear-gradient(left, #000,#300,#FF8C00,#300, #000);/*для ie*/
-	background-image: -ms-radial-gradient(circle,#CD853F,#FF8C00,#300, #000 );/*для ie*/
+	background: -ms-linear-gradient(left, #000,#300,#FF8C00,#300, #000);/*для ie*//*для ie*/
 	background-image: -o-radial-gradient(circle,#CD853F,#FF8C00,#300, #000 );
 	background-image: -webkit-radial-gradient(circle,#CD853F,#FF8C00,#300, #000 );
 }
@@ -236,9 +243,9 @@ a.navi{
 }
 .cover img{
 	width: 100vw;
-	height:100vh;
-	-webkit-filter: drop-shadow (0 0 1px #eedd82);
-	        filter: drop-shadow (0 0 1px #eedd82);
+	height: 100vh;
+	-webkit-filter: drop-shadow(0 0 1px #eedd82);
+	        filter: drop-shadow(0 0 1px #eedd82);
 	-webkit-animation: cover 2s forwards;
 	        animation: cover 2s forwards;
 }
@@ -250,8 +257,6 @@ a.navi{
 	100%{
 		-webkit-transform: rotate(1080deg) scale(0.1);
 		        transform: rotate(1080deg) scale(0.1);
-				filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=4);
-				-ms-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=4);
 		opacity: 0;}	
 }
 @keyframes cover{
@@ -262,9 +267,6 @@ a.navi{
 	100%{
 		-webkit-transform: rotate(1080deg) scale(0.1);
 		        transform: rotate(1080deg) scale(0.1);
-				filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=4);
-				-ms-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=4);
-
 		opacity: 0;}	
 }
 /*------------------------------------------*/
@@ -278,7 +280,8 @@ a.navi{
 }
 .xxx:hover {
 	cursor: pointer;
-	filter: drop-shadow(0 0 10px #DAA520);
+	-webkit-filter: drop-shadow(0 0 10px #DAA520);
+	        filter: drop-shadow(0 0 10px #DAA520);
 }
 .icon {
 	font-size: 40px;
@@ -404,9 +407,6 @@ a.navi{
 	100%{
 		-webkit-transform: rotate(120deg) scale(50);
 		        transform: rotate(120deg) scale(50);
-				filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-				-ms-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-
 		opacity:0;
 		z-index:39;
 	}
@@ -421,8 +421,6 @@ a.navi{
 	100%{
 		-webkit-transform: rotate(120deg) scale(50);
 		        transform: rotate(120deg) scale(50);
-				filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-				-ms-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 		opacity:0;
 		z-index:39;
 	}
@@ -770,7 +768,6 @@ input[type="submit"]:hover {
 	height:94vh;
 	background:#FF9800;
 	background: -ms-linear-gradient(left, #FF8C00,#FFEB3B,#FF8C00);
-	background-image: -ms-radial-gradient(circle,#FFEB3B,#FF8C00 );
 	background-image: -o-radial-gradient(circle,#FFEB3B,#FF8C00 );
 	background-image: -webkit-radial-gradient(circle,#FFEB3B,#FF8C00 );
 	border-radius:50%;
@@ -925,9 +922,6 @@ position: relative;
 	100%{opacity:0.8;
 		-webkit-transform: rotate(360deg);
 		        transform: rotate(360deg);
-				filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=4);
-				-ms-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=4);
-
 		-webkit-filter:drop-shadow(0 0 5px #daa520) saturate(1);
 		        filter:drop-shadow(0 0 5px #daa520) saturate(1);}
 }
@@ -940,9 +934,6 @@ position: relative;
 	100%{opacity:0.8;
 		-webkit-transform: rotate(360deg);
 		        transform: rotate(360deg);
-				filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=4);
-				-ms-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=4);
-
 		-webkit-filter:drop-shadow(0 0 5px #daa520) saturate(1);
 		        filter:drop-shadow(0 0 5px #daa520) saturate(1);}
 }
@@ -965,9 +956,6 @@ position: relative;
 	100%{opacity:0.8;
 		-webkit-transform: rotate(-360deg);
 		        transform: rotate(-360deg);
-				filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=4);
-				-ms-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=4);
-
 		-webkit-filter:drop-shadow(0 0 5px #daa520) saturate(1);
 		        filter:drop-shadow(0 0 5px #daa520) saturate(1);}
 }
@@ -980,8 +968,6 @@ position: relative;
 	100%{opacity:0.8;
 		-webkit-transform: rotate(-360deg);
 		        transform: rotate(-360deg);
-				filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=4);
-				-ms-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=4);
 		-webkit-filter:drop-shadow(0 0 5px #daa520) saturate(1);
 		        filter:drop-shadow(0 0 5px #daa520) saturate(1);}
 }

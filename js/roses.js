@@ -16,7 +16,7 @@ function roses(){
 	//target.setAttribute("src","image/flowers/flower"+k+".png");//неправильно работает в ie11
 	$(target).attr("src","image/flowers/flower"+k+".png");
 	target.style.animation = "flower 2s forwards";
-	target.style.filter = "drop-shadow(0 0 1px #300)";
+	target.style.filter = "drop-shadow(0 0 1px black)";
 	target.removeAttribute("onclick");
 	target.style.cursor="default";
 	k++;
